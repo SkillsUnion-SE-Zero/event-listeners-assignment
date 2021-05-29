@@ -4,33 +4,55 @@
 
 ## Problems
 
-### 1: Random Colours
+### 1: Creating Random Images
+
+Start of with the following HTML:
 
 ```HTML
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Random Images</title>
+</head>
+<body>
+    <div>
+        <label>
+            Width:
+            <input type="number" class="width" />
+        </label>
+      
+        <label>
+            Height:
+            <input type="number" class="height" />
+        </label>
 
-    <head>
-        <title>Random Colours</title>
+        <button id="randomize">Get random image!</button>
+    </div>
 
-    </head>
+    <img src="" class="random-img" />
 
-    <body>
-
-        <h1>Welcome</h1>
-        <button> Click Me</button>
-
-        <script src=""> </script>
-    </body>
-
+    <script src=""> </script>
+</body>
 </html>
 ```
 
+1. Create and link a JavaScript file
+1. When someone clicks the `#randomize` button:
+    1. Create a URL based on this [documentation](https://source.unsplash.com/)
 
-1. Under the `src` directory, create files `index1.js` and `index1.html`. Link `js` file to the `html` file, and test if it's working correctly.
-1. Using the given HTML mark up, your task is to create a different random colour every time the button `Click Me` is clicked.(Create a method that does it)
-1. Set the background colour of the page to this random colour, additionally display the RGB values of the colour if you can on the web page.
+        e.g. It might look something like this: `https://source.unsplash.com/1600x900`
+    1. Update the `img` element with the new image
 
+#### Optional Bonuse
 
+Using the two inputs allow the user to select the width and the height!
+
+Tips:
+
+- Using a search engine, research how to get the value of an inout element using javascript.
+
+    Example: `javascript get input value`
+- Consider using JavaScript Template Literals
 
 ### 2: Mouseover and Mouseout
 
